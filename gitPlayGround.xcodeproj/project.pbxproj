@@ -263,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCBF93B9214FFE1D009DA1F3 /* ViewController.swift in Sources */,
+				74CFB5B721513B7300158EF9 /* GabesViewController.swift in Sources */,
 				CCBF93B7214FFE1D009DA1F3 /* AppDelegate.swift in Sources */,
 				CC26679021529CCD0026F963 /* thing.swift in Sources */,
 				CC26678E21529C3B0026F963 /* justinsTableViewController.swift in Sources */,
