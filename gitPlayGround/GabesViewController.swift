@@ -11,12 +11,14 @@ import UIKit
 class GabesViewController: UIViewController {
 
     @IBOutlet weak var switchImage: UIImageView!
+    @IBOutlet weak var madSkillzValue: UIStepper!
+    @IBOutlet weak var coolnessSlider: UISlider!
+    @IBOutlet weak var potatoSwitchValue: UISwitch!
+    
+    var coolness: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //defaults to hidden
-        switchImage.isHidden = true
 
         // Do any additional setup after loading the view.
     }
@@ -32,6 +34,12 @@ class GabesViewController: UIViewController {
         } else {
             switchImage.isHidden = true
         }
+    }
+    
+    func updateCoolness() {
+        coolness = Int(coolnessSlider.value) + Int(madSkillzValue.value)
+        
+        coolness += potatoSwitchValue.isOn ? 5 : -5
     }
     
     /*
