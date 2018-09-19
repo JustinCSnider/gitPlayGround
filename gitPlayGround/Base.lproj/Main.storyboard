@@ -39,7 +39,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Gabe"/>
                                 <connections>
-                                    <segue destination="Sx7-Tt-Nbh" kind="show" identifier="gabeSegue" id="GyB-KR-lKa"/>
+                                    <segue destination="aYh-ys-lH6" kind="show" id="Roz-X1-drG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -172,13 +172,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="rl4-qh-7Wq"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Coolness Calculator" id="n4m-bd-ViJ">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Wk0-BB-1XU">
-                            <connections>
-                                <action selector="cancel:" destination="aYh-ys-lH6" id="kdi-HI-KR5"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Coolness Calculator" id="g7u-8d-wrY"/>
                     <connections>
                         <outlet property="coolnessSlider" destination="5zZ-wr-9x9" id="W1y-Le-igx"/>
                         <outlet property="endLabel" destination="Zn8-q1-c5p" id="cpV-a0-gMf"/>
@@ -208,24 +202,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4kV-FB-BkI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-734" y="-122"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="FDt-p7-8Bn">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Sx7-Tt-Nbh" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rGt-Qw-yIS">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="aYh-ys-lH6" kind="relationship" relationship="rootViewController" id="7V3-Rz-iNZ"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QPh-0i-Nk6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="972" y="837"/>
         </scene>
     </scenes>
     <resources>

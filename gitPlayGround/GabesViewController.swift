@@ -25,10 +25,6 @@ class GabesViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func cancel(_ sender: UIBarButtonItem) {
-        dismiss(animated: true, completion: nil)
-    }
-    
     @IBAction func potatoSwitch(_ sender: UISwitch) {
         if sender.isOn {
             switchImage.isHidden = false
