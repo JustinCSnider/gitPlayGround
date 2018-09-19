@@ -14,18 +14,19 @@ class GabesViewController: UIViewController {
     @IBOutlet weak var madSkillzValue: UIStepper!
     @IBOutlet weak var coolnessSlider: UISlider!
     @IBOutlet weak var potatoSwitchValue: UISwitch!
-    
-    var coolness: Int = 0
+    @IBOutlet weak var endLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func cancel(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func potatoSwitch(_ sender: UISwitch) {
@@ -36,11 +37,15 @@ class GabesViewController: UIViewController {
         }
     }
     
-    func updateCoolness() {
+    @IBAction func calculateButton(_ sender: UIButton) {
+        var coolness: Int = 0
         coolness = Int(coolnessSlider.value) + Int(madSkillzValue.value)
+        coolness += potatoSwitchValue.isOn ? 5 : -3
         
-        coolness += potatoSwitchValue.isOn ? 5 : -5
+        endLabel.text = String(coolness)
+        endLabel.isHidden = false
     }
+    
     
     /*
     // MARK: - Navigation
