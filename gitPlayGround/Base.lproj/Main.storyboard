@@ -67,22 +67,34 @@
             </objects>
             <point key="canvasLocation" x="2481" y="-770"/>
         </scene>
-        <!--Dude-->
+        <!--Stuff-->
         <scene sceneID="Vj1-zp-8uZ">
             <objects>
-                <tableViewController id="seT-JC-JpM" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tWR-9n-yEm">
+                <tableViewController id="seT-JC-JpM" customClass="justinsTableViewController" customModule="gitPlayGround" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="95" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tWR-9n-yEm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableViewCell" rowHeight="71" id="szc-yH-vXi">
-                                <rect key="frame" x="0.0" y="28" width="375" height="71"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableViewCell" rowHeight="95" id="szc-yH-vXi" customClass="stuffTableViewCell" customModule="gitPlayGround" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="95"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="szc-yH-vXi" id="xuO-nw-lmI">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="70.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fA9-PD-CxX">
+                                            <rect key="frame" x="16" y="15" width="343" height="69"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="fA9-PD-CxX" id="1dc-mg-yNY"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -90,7 +102,7 @@
                             <outlet property="delegate" destination="seT-JC-JpM" id="yaa-Ma-RoW"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Dude" leftItemsSupplementBackButton="YES" id="pMb-NW-whf"/>
+                    <navigationItem key="navigationItem" title="Stuff" leftItemsSupplementBackButton="YES" id="pMb-NW-whf"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YTp-za-C7T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
