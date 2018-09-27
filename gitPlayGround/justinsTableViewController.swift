@@ -9,10 +9,13 @@
 import UIKit
 
 class justinsTableViewController: UITableViewController {
+    
+    var things: [Thing] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        things.append(Thing(name: "Foo", photo: nil)!)
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,23 +27,35 @@ class justinsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 0
+        return things.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cellIdentifier = "tableViewCell"
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! stuffTableViewCell
+        
+        let thing = things[indexPath.row]
+        
+        cell.nameLabel.text = thing.name
+        
         return cell
     }
-    */
+    
+    @IBAction func unwindToStuffList(sender: UIStoryboardSegue) {
+        if let sourceViewController = sender.source as? thingViewController, let thing = sourceViewController.thing {
+            
+            let newIndexPath = IndexPath(row: things.count, section: 0)
+            
+            things.append(thing)
+            tableView.insertRows(at: [newIndexPath], with: .automatic)
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.
