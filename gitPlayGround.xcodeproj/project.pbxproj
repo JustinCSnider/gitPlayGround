@@ -7,16 +7,18 @@
     objects = {
 
 /* Begin PBXBuildFile section */
-		74CFB5B721513B7300158EF9 /* GabesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CFB5B621513B7300158EF9 /* GabesViewController.swift */; };
-		CC26678E21529C3B0026F963 /* justinsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC26678D21529C3B0026F963 /* justinsTableViewController.swift */; };
-		CC26679021529CCD0026F963 /* thing.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC26678F21529CCD0026F963 /* thing.swift */; };
-        CCBF93B7214FFE1D009DA1F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBF93B6214FFE1D009DA1F3 /* AppDelegate.swift */; };
-        CCBF93B9214FFE1D009DA1F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBF93B8214FFE1D009DA1F3 /* ViewController.swift */; };
-        CCBF93BC214FFE1D009DA1F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCBF93BA214FFE1D009DA1F3 /* Main.storyboard */; };
-        CCBF93BE214FFE1E009DA1F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCBF93BD214FFE1E009DA1F3 /* Assets.xcassets */; };
-        CCBF93C1214FFE1E009DA1F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCBF93BF214FFE1E009DA1F3 /* LaunchScreen.storyboard */; };
-        CCBF93CC214FFE1E009DA1F3 /* gitPlayGroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBF93CB214FFE1E009DA1F3 /* gitPlayGroundTests.swift */; };
-        CCBF93D7214FFE1E009DA1F3 /* gitPlayGroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBF93D6214FFE1E009DA1F3 /* gitPlayGroundUITests.swift */; };
+        74CFB5B721513B7300158EF9 /* GabesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CFB5B621513B7300158EF9 /* GabesViewController.swift */; };
+        CC26678E21529C3B0026F963 /* justinsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC26678D21529C3B0026F963 /* justinsTableViewController.swift */; };
+		CC26679021529CCD0026F963 /* Thing.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC26678F21529CCD0026F963 /* Thing.swift */; };
+		CCADB5BC215A760F0004D854 /* thingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCADB5BB215A760F0004D854 /* thingViewController.swift */; };
+		CCB649C12153F51C0051231B /* stuffTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB649C02153F51C0051231B /* stuffTableViewCell.swift */; };
+		CCBF93B7214FFE1D009DA1F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBF93B6214FFE1D009DA1F3 /* AppDelegate.swift */; };
+		CCBF93B9214FFE1D009DA1F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBF93B8214FFE1D009DA1F3 /* ViewController.swift */; };
+		CCBF93BC214FFE1D009DA1F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCBF93BA214FFE1D009DA1F3 /* Main.storyboard */; };
+		CCBF93BE214FFE1E009DA1F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCBF93BD214FFE1E009DA1F3 /* Assets.xcassets */; };
+		CCBF93C1214FFE1E009DA1F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCBF93BF214FFE1E009DA1F3 /* LaunchScreen.storyboard */; };
+		CCBF93CC214FFE1E009DA1F3 /* gitPlayGroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBF93CB214FFE1E009DA1F3 /* gitPlayGroundTests.swift */; };
+		CCBF93D7214FFE1E009DA1F3 /* gitPlayGroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBF93D6214FFE1E009DA1F3 /* gitPlayGroundUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,22 +39,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		74CFB5B621513B7300158EF9 /* GabesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GabesViewController.swift; sourceTree = "<group>"; };
-		CC26678D21529C3B0026F963 /* justinsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = justinsTableViewController.swift; sourceTree = "<group>"; };
-		CC26678F21529CCD0026F963 /* thing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thing.swift; sourceTree = "<group>"; };
-        CCBF93B3214FFE1D009DA1F3 /* gitPlayGround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gitPlayGround.app; sourceTree = BUILT_PRODUCTS_DIR; };
-        CCBF93B6214FFE1D009DA1F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-        CCBF93B8214FFE1D009DA1F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-        CCBF93BB214FFE1D009DA1F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-        CCBF93BD214FFE1E009DA1F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-        CCBF93C0214FFE1E009DA1F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-        CCBF93C2214FFE1E009DA1F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-        CCBF93C7214FFE1E009DA1F3 /* gitPlayGroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gitPlayGroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-        CCBF93CB214FFE1E009DA1F3 /* gitPlayGroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gitPlayGroundTests.swift; sourceTree = "<group>"; };
-        CCBF93CD214FFE1E009DA1F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-        CCBF93D2214FFE1E009DA1F3 /* gitPlayGroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gitPlayGroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-        CCBF93D6214FFE1E009DA1F3 /* gitPlayGroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gitPlayGroundUITests.swift; sourceTree = "<group>"; };
-        CCBF93D8214FFE1E009DA1F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        74CFB5B621513B7300158EF9 /* GabesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GabesViewController.swift; sourceTree = "<group>"; };
+        CC26678D21529C3B0026F963 /* justinsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = justinsTableViewController.swift; sourceTree = "<group>"; };
+		CC26678F21529CCD0026F963 /* Thing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thing.swift; sourceTree = "<group>"; };
+		CCADB5BB215A760F0004D854 /* thingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thingViewController.swift; sourceTree = "<group>"; };
+		CCB649C02153F51C0051231B /* stuffTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stuffTableViewCell.swift; sourceTree = "<group>"; };
+		CCBF93B3214FFE1D009DA1F3 /* gitPlayGround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gitPlayGround.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCBF93B6214FFE1D009DA1F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CCBF93B8214FFE1D009DA1F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CCBF93BB214FFE1D009DA1F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCBF93BD214FFE1E009DA1F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCBF93C0214FFE1E009DA1F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCBF93C2214FFE1E009DA1F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCBF93C7214FFE1E009DA1F3 /* gitPlayGroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gitPlayGroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCBF93CB214FFE1E009DA1F3 /* gitPlayGroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gitPlayGroundTests.swift; sourceTree = "<group>"; };
+		CCBF93CD214FFE1E009DA1F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCBF93D2214FFE1E009DA1F3 /* gitPlayGroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gitPlayGroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCBF93D6214FFE1E009DA1F3 /* gitPlayGroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gitPlayGroundUITests.swift; sourceTree = "<group>"; };
+		CCBF93D8214FFE1E009DA1F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,35 +109,37 @@
             children = (
                 CCBF93B6214FFE1D009DA1F3 /* AppDelegate.swift */,
                 CCBF93B8214FFE1D009DA1F3 /* ViewController.swift */,
-				74CFB5B621513B7300158EF9 /* GabesViewController.swift */,
-				CC26678D21529C3B0026F963 /* justinsTableViewController.swift */,
-                CCBF93BA214FFE1D009DA1F3 /* Main.storyboard */,
-                CCBF93BD214FFE1E009DA1F3 /* Assets.xcassets */,
-                CCBF93BF214FFE1E009DA1F3 /* LaunchScreen.storyboard */,
-                CCBF93C2214FFE1E009DA1F3 /* Info.plist */,
-                CC26678F21529CCD0026F963 /* thing.swift */,
-            );
-            path = gitPlayGround;
-            sourceTree = "<group>";
-        };
-        CCBF93CA214FFE1E009DA1F3 /* gitPlayGroundTests */ = {
-            isa = PBXGroup;
-            children = (
-                CCBF93CB214FFE1E009DA1F3 /* gitPlayGroundTests.swift */,
-                CCBF93CD214FFE1E009DA1F3 /* Info.plist */,
-            );
-            path = gitPlayGroundTests;
-            sourceTree = "<group>";
-        };
-        CCBF93D5214FFE1E009DA1F3 /* gitPlayGroundUITests */ = {
-            isa = PBXGroup;
-            children = (
-                CCBF93D6214FFE1E009DA1F3 /* gitPlayGroundUITests.swift */,
-                CCBF93D8214FFE1E009DA1F3 /* Info.plist */,
-            );
-            path = gitPlayGroundUITests;
-            sourceTree = "<group>";
-        };
+                74CFB5B621513B7300158EF9 /* GabesViewController.swift */,
+                CC26678D21529C3B0026F963 /* justinsTableViewController.swift */,
+				CCBF93BA214FFE1D009DA1F3 /* Main.storyboard */,
+				CCBF93BD214FFE1E009DA1F3 /* Assets.xcassets */,
+				CCBF93BF214FFE1E009DA1F3 /* LaunchScreen.storyboard */,
+				CCBF93C2214FFE1E009DA1F3 /* Info.plist */,
+				CC26678F21529CCD0026F963 /* Thing.swift */,
+				CCB649C02153F51C0051231B /* stuffTableViewCell.swift */,
+				CCADB5BB215A760F0004D854 /* thingViewController.swift */,
+			);
+			path = gitPlayGround;
+			sourceTree = "<group>";
+		};
+		CCBF93CA214FFE1E009DA1F3 /* gitPlayGroundTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCBF93CB214FFE1E009DA1F3 /* gitPlayGroundTests.swift */,
+				CCBF93CD214FFE1E009DA1F3 /* Info.plist */,
+			);
+			path = gitPlayGroundTests;
+			sourceTree = "<group>";
+		};
+		CCBF93D5214FFE1E009DA1F3 /* gitPlayGroundUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CCBF93D6214FFE1E009DA1F3 /* gitPlayGroundUITests.swift */,
+				CCBF93D8214FFE1E009DA1F3 /* Info.plist */,
+			);
+			path = gitPlayGroundUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -268,8 +274,10 @@
                 CCBF93B9214FFE1D009DA1F3 /* ViewController.swift in Sources */,
                 74CFB5B721513B7300158EF9 /* GabesViewController.swift in Sources */,
                 CCBF93B7214FFE1D009DA1F3 /* AppDelegate.swift in Sources */,
-                CC26679021529CCD0026F963 /* thing.swift in Sources */,
+                CC26679021529CCD0026F963 /* Thing.swift in Sources */,
+                CCADB5BC215A760F0004D854 /* thingViewController.swift in Sources */,
                 CC26678E21529C3B0026F963 /* justinsTableViewController.swift in Sources */,
+                CCB649C12153F51C0051231B /* stuffTableViewCell.swift in Sources */,
             );
             runOnlyForDeploymentPostprocessing = 0;
         };
