@@ -10,13 +10,12 @@ import UIKit
 
 class justinsTableViewController: UITableViewController {
     
-    var things: [thing] = []
+    var things: [Thing] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        things.append(thing(name: "Dude")!)
-        things.append(thing(name: "guy")!)
+        things.append(Thing(name: "Foo", photo: nil)!)
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,6 +45,16 @@ class justinsTableViewController: UITableViewController {
         cell.nameLabel.text = thing.name
         
         return cell
+    }
+    
+    @IBAction func unwindToStuffList(sender: UIStoryboardSegue) {
+        if let sourceViewController = sender.source as? thingViewController, let thing = sourceViewController.thing {
+            
+            let newIndexPath = IndexPath(row: things.count, section: 0)
+            
+            things.append(thing)
+            tableView.insertRows(at: [newIndexPath], with: .automatic)
+        }
     }
 
     /*

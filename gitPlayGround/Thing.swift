@@ -6,12 +6,14 @@
 //  Copyright © 2018 Justin Snider. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class thing {
+class Thing {
     var name: String
+    var photo: UIImage?
     
-    init?(name: String) {
+    init?(name: String, photo: UIImage?) {
         self.name = name
+        self.photo = photo
     }
 }
