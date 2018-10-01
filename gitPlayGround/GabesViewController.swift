@@ -36,7 +36,7 @@ class GabesViewController: UIViewController {
     @IBAction func calculateButton(_ sender: UIButton) {
         var coolness: Int = 0
         coolness = Int(coolnessSlider.value) + Int(madSkillzValue.value)
-        coolness += potatoSwitchValue.isOn ? 5 : -3
+        coolness += potatoSwitchValue.isOn ? 3 : -3
         
         endLabel.text = String(coolness)
         endLabel.isHidden = false
