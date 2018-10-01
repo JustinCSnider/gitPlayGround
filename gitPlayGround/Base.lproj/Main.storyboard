@@ -57,20 +57,54 @@
             </objects>
             <point key="canvasLocation" x="972" y="33.733133433283363"/>
         </scene>
-        <!--View Controller-->
+        <!--IS IT YOUR BIRTHDAY?-->
         <scene sceneID="l7c-Gl-KRk">
             <objects>
-                <viewController id="DQp-EC-CLw" sceneMemberID="viewController">
+                <viewController id="DQp-EC-CLw" customClass="DougViewController" customModule="gitPlayGround" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FzQ-Pw-TSw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOE-7U-fop">
+                                <rect key="frame" x="20" y="84" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UfO-yS-AZc">
+                                <rect key="frame" x="273" y="305" width="86" height="216"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="DQp-EC-CLw" id="SwG-Vs-pY2"/>
+                                    <outlet property="delegate" destination="DQp-EC-CLw" id="NGD-Jn-T15"/>
+                                </connections>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W8S-rw-Th1">
+                                <rect key="frame" x="16" y="305" width="249" height="216"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="DQp-EC-CLw" id="Kxv-mA-YJK"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40981135629999998" green="0.74390156730000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="ZOE-7U-fop" firstAttribute="top" secondItem="sYC-Nn-7IZ" secondAttribute="top" constant="20" id="1up-MO-dcW"/>
+                            <constraint firstItem="sYC-Nn-7IZ" firstAttribute="trailing" secondItem="ZOE-7U-fop" secondAttribute="trailing" constant="20" id="CKX-wD-IUe"/>
+                            <constraint firstItem="ZOE-7U-fop" firstAttribute="leading" secondItem="sYC-Nn-7IZ" secondAttribute="leading" constant="20" id="jP6-c2-zsq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="sYC-Nn-7IZ"/>
                     </view>
+                    <navigationItem key="navigationItem" title="IS IT YOUR BIRTHDAY?" id="5IL-Qo-39C"/>
+                    <connections>
+                        <outlet property="dayPicker" destination="UfO-yS-AZc" id="Eug-cw-rRQ"/>
+                        <outlet property="monthPicker" destination="W8S-rw-Th1" id="kFG-HM-ISv"/>
+                        <outlet property="resultsLabel" destination="ZOE-7U-fop" id="hAJ-JN-vwT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oIl-LE-ptX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2481" y="-770"/>
+            <point key="canvasLocation" x="2480.8000000000002" y="-770.46476761619192"/>
         </scene>
         <!--Stuff-->
         <scene sceneID="Vj1-zp-8uZ">
