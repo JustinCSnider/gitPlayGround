@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EGN-Ac-Tiz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EGN-Ac-Tiz">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,25 +18,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4r-nP-wtj">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4r-nP-wtj">
                                 <rect key="frame" x="169" y="217" width="37" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Doug"/>
                                 <connections>
                                     <segue destination="DQp-EC-CLw" kind="show" identifier="dougsSegue" id="Qq4-HJ-hwo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kp-0s-qgE">
-                                <rect key="frame" x="167" y="318" width="42" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kp-0s-qgE">
+                                <rect key="frame" x="166.5" y="318" width="42" height="30"/>
                                 <state key="normal" title="Justin"/>
                                 <connections>
                                     <segue destination="seT-JC-JpM" kind="show" id="U3u-eQ-xjf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcy-tp-DzG">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcy-tp-DzG">
                                 <rect key="frame" x="169" y="426" width="37" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Gabe"/>
                                 <connections>
                                     <segue destination="aYh-ys-lH6" kind="show" id="Roz-X1-drG"/>
@@ -44,6 +41,14 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hcy-tp-DzG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BJO-yU-XIv"/>
+                            <constraint firstItem="0kp-0s-qgE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CRn-M9-jbo"/>
+                            <constraint firstItem="h4r-nP-wtj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="153" id="SMS-ti-p77"/>
+                            <constraint firstItem="0kp-0s-qgE" firstAttribute="top" secondItem="h4r-nP-wtj" secondAttribute="bottom" constant="71" id="Zrf-19-R3z"/>
+                            <constraint firstItem="h4r-nP-wtj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="beS-Vg-hVa"/>
+                            <constraint firstItem="hcy-tp-DzG" firstAttribute="top" secondItem="0kp-0s-qgE" secondAttribute="bottom" constant="78" id="zIP-jt-YlE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Main" id="nHx-Iv-QYB"/>
@@ -165,7 +170,6 @@
             </objects>
             <point key="canvasLocation" x="4558" y="345"/>
         </scene>
-        <!--View Controller-->
         <!--Coolness Calculator-->
         <scene sceneID="XdD-Z6-sC6">
             <objects>
@@ -200,19 +204,19 @@
                                 <rect key="frame" x="41" y="91" width="292" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Suck" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lff-ZD-QYj">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suck" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lff-ZD-QYj">
                                         <rect key="frame" x="0.0" y="0.0" width="38" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="5zZ-wr-9x9">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="5zZ-wr-9x9">
                                         <rect key="frame" x="40" y="0.0" width="163" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="159" id="gip-qg-bA9"/>
                                         </constraints>
                                     </slider>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cool Beans" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01K-5a-WP1">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cool Beans" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01K-5a-WP1">
                                         <rect key="frame" x="205" y="0.0" width="87" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -298,7 +302,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="potato" width="129" height="97"/>
         <image name="defaultPhoto" width="320" height="320"/>
+        <image name="potato" width="129" height="97"/>
     </resources>
 </document>
