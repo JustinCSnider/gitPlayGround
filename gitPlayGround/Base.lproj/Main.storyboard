@@ -285,7 +285,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="rl4-qh-7Wq"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Coolness Calculator" id="g7u-8d-wrY"/>
+                    <navigationItem key="navigationItem" title="Coolness Calculator" id="g7u-8d-wrY">
+                        <barButtonItem key="rightBarButtonItem" title="Testing" id="P2B-2G-xZW">
+                            <connections>
+                                <segue destination="rhg-EK-feK" kind="show" id="8bW-2i-aKX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="coolnessSlider" destination="5zZ-wr-9x9" id="W1y-Le-igx"/>
                         <outlet property="endLabel" destination="Zn8-q1-c5p" id="cpV-a0-gMf"/>
@@ -297,6 +303,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c6n-BO-4sz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1926" y="837"/>
+        </scene>
+        <!--Warning - Random Testing-->
+        <scene sceneID="lxh-5K-Pj9">
+            <objects>
+                <viewController id="rhg-EK-feK" customClass="GabesTestingViewController" customModule="gitPlayGround" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mEZ-Gy-DxK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" text="Check out this gnarly text view!" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNI-CC-kWe">
+                                <rect key="frame" x="60" y="174" width="255" height="463"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Put some words in here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lW5-vV-Fr4">
+                                <rect key="frame" x="50" y="94" width="275" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LNI-CC-kWe" firstAttribute="leading" secondItem="Wpo-46-x1e" secondAttribute="leading" constant="60" id="8XD-5D-g7H"/>
+                            <constraint firstItem="LNI-CC-kWe" firstAttribute="top" secondItem="lW5-vV-Fr4" secondAttribute="bottom" constant="50" id="E2M-7C-2VS"/>
+                            <constraint firstItem="Wpo-46-x1e" firstAttribute="bottom" secondItem="LNI-CC-kWe" secondAttribute="bottom" constant="30" id="PdL-4f-5Wx"/>
+                            <constraint firstItem="lW5-vV-Fr4" firstAttribute="top" secondItem="Wpo-46-x1e" secondAttribute="top" constant="30" id="Txo-p5-hPc"/>
+                            <constraint firstItem="lW5-vV-Fr4" firstAttribute="leading" secondItem="Wpo-46-x1e" secondAttribute="leading" constant="50" id="VZt-pg-dPd"/>
+                            <constraint firstItem="Wpo-46-x1e" firstAttribute="trailing" secondItem="lW5-vV-Fr4" secondAttribute="trailing" constant="50" id="WHK-Qh-jCp"/>
+                            <constraint firstItem="Wpo-46-x1e" firstAttribute="trailing" secondItem="LNI-CC-kWe" secondAttribute="trailing" constant="60" id="uG0-em-3kh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wpo-46-x1e"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Warning - Random Testing" id="lV6-Ik-maM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z0y-UO-SI6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2759.1999999999998" y="836.13193403298362"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qt9-Tb-GUb">
