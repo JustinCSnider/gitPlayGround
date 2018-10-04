@@ -15,8 +15,10 @@ class GabesTestingViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        WordList.layer.borderWidth = 2
+        WordList.layer.borderColor = UIColor.black.cgColor
+        WordList.layer.cornerRadius = 5
     }
     
     //MARK: UITextFieldDelegate
@@ -27,6 +29,17 @@ class GabesTestingViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
+        
+        if entryTextField.text != nil {
+            
+            var str = entryTextField.text!
+            str = str.replacingOccurrences(of: ",", with: "")
+            let strArray: [String.SubSequence] = str.split(separator: " ", maxSplits: Int.max, omittingEmptySubsequences: true)
+            
+            WordList.text += strArray.joined(separator: "\n")
+            
+            entryTextField.text = ""
+        }
         
     }
     
