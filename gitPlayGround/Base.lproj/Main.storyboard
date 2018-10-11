@@ -333,10 +333,16 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6a6-1j-cgV">
                                                 <rect key="frame" x="0.0" y="0.0" width="137.5" height="30"/>
                                                 <state key="normal" title="Save"/>
+                                                <connections>
+                                                    <action selector="saveButtonTapped:" destination="rhg-EK-feK" eventType="touchUpInside" id="yCd-4Z-5CG"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ge-0b-9cy">
                                                 <rect key="frame" x="137.5" y="0.0" width="137.5" height="30"/>
                                                 <state key="normal" title="Clear"/>
+                                                <connections>
+                                                    <action selector="clearButtonTapped:" destination="rhg-EK-feK" eventType="touchUpInside" id="It8-Zw-ExZ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -368,6 +374,7 @@
                     <connections>
                         <outlet property="WordList" destination="LNI-CC-kWe" id="h2k-6P-A2W"/>
                         <outlet property="entryTextField" destination="lW5-vV-Fr4" id="48t-zw-KD0"/>
+                        <outlet property="saveButton" destination="6a6-1j-cgV" id="1rU-CG-jOe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z0y-UO-SI6" userLabel="First Responder" sceneMemberID="firstResponder"/>

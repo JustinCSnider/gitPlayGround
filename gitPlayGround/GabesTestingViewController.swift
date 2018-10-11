@@ -12,9 +12,12 @@ class GabesTestingViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var entryTextField: UITextField!
     @IBOutlet weak var WordList: UITextView!
+    @IBOutlet weak var saveButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        WordList.text = loadText()
         
         WordList.layer.borderWidth = 2
         WordList.layer.borderColor = UIColor.black.cgColor
@@ -28,9 +31,13 @@ class GabesTestingViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        saveButton.isEnabled = false
+    }
+    
     func textFieldDidEndEditing(_ textField: UITextField) {
         
-        if entryTextField.text != nil {
+        if entryTextField.text?.trimmingCharacters(in: .whitespaces) != "" && entryTextField.text != nil {
             
             var str = entryTextField.text!
             str = str.replacingOccurrences(of: ",", with: "")
@@ -41,19 +48,31 @@ class GabesTestingViewController: UIViewController, UITextFieldDelegate {
             entryTextField.text = ""
         }
         
+        saveButton.isEnabled = true
     }
     
+    //MARK: Actions
     
-    
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func saveButtonTapped(_ sender: UIButton) {
+        saveText()
     }
-    */
+    
+    @IBAction func clearButtonTapped(_ sender: UIButton) {
+        WordList.text = ""
+        saveText()
+    }
+    
+    //MARK: Private Methods
+    
+    private func saveText() {
+        if let unwrappedText = WordList.text {
+            NSKeyedArchiver.archiveRootObject(unwrappedText, toFile: Text.ArchiveURL.path)
+        }
+    }
+    
+    private func loadText() -> String? {
+        let str = NSKeyedUnarchiver.unarchiveObject(withFile: Text.ArchiveURL.path) as? String
+        return str
+    }
+    
 }
