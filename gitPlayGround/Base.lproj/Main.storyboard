@@ -123,14 +123,14 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fA9-PD-CxX">
-                                            <rect key="frame" x="126" y="15" width="233" height="69"/>
+                                            <rect key="frame" x="110" y="15" width="249" height="69"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="cLs-TW-D7J">
-                                            <rect key="frame" x="16" y="0.0" width="102" height="95"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="102" height="95"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
@@ -166,19 +166,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of thing" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NnQ-dY-rTQ">
-                                <rect key="frame" x="16" y="108" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of thing" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NnQ-dY-rTQ">
+                                <rect key="frame" x="20" y="108" width="335" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="nRR-KG-xpc">
-                                <rect key="frame" x="16" y="163" width="343" height="341"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="nRR-KG-xpc">
+                                <rect key="frame" x="16" y="163" width="343" height="320"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="5Oh-IX-edw"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="5vE-WE-EAF" appends="YES" id="Q8X-z8-0D8"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NnQ-dY-rTQ" firstAttribute="top" secondItem="Dx7-qk-M2V" secondAttribute="top" constant="44" id="1tG-dD-IrY"/>
+                            <constraint firstItem="Dx7-qk-M2V" firstAttribute="trailing" secondItem="nRR-KG-xpc" secondAttribute="trailing" constant="16" id="5aG-1n-uIj"/>
+                            <constraint firstItem="nRR-KG-xpc" firstAttribute="top" secondItem="NnQ-dY-rTQ" secondAttribute="bottom" constant="25" id="KOo-0q-y4W"/>
+                            <constraint firstItem="NnQ-dY-rTQ" firstAttribute="leading" secondItem="Dx7-qk-M2V" secondAttribute="leading" constant="20" id="O0P-Xd-SnB"/>
+                            <constraint firstItem="nRR-KG-xpc" firstAttribute="leading" secondItem="Dx7-qk-M2V" secondAttribute="leading" constant="16" id="UBO-RD-Txv"/>
+                            <constraint firstItem="Dx7-qk-M2V" firstAttribute="trailing" secondItem="NnQ-dY-rTQ" secondAttribute="trailing" constant="20" id="gqZ-7Q-iaP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Dx7-qk-M2V"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Thing" id="ZnF-Ue-5Fb">
@@ -201,6 +214,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WHx-Ao-k9E" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="JAy-Lx-2mk" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="5vE-WE-EAF">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="tQr-Hi-m0F" id="JE6-Vc-JVs"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="4558" y="345"/>
         </scene>
