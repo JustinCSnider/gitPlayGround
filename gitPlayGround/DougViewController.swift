@@ -8,43 +8,30 @@
 
 import UIKit
 
-class DougViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class DougViewController: UIViewController {
 
     
     @IBOutlet weak var resultsLabel: UILabel!
-    @IBOutlet weak var monthPicker: UIPickerView!
-    @IBOutlet weak var dayPicker: UIPickerView!
-    
-   var months = ["Month", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November","December"]
 
-    var feb = [1...28]
-    var shortMonths = [1...30]
-    var longMonths = [1...31]
+    @IBOutlet weak var whiteSwitch: UISwitch!
+    @IBOutlet weak var blackSwitch: UISwitch!
+    @IBOutlet weak var redSwitch: UISwitch!
+    @IBOutlet weak var blueSwitch: UISwitch!
+    @IBOutlet weak var greenSwitch: UISwitch!
+    @IBOutlet weak var purpleSwitch: UISwitch!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
-        monthPicker.delegate = self
-        monthPicker.dataSource = self
+        resultsLabel.text = ""
+
     }
     
-        // Month Picker
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return months[row]
-    }
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return months.count
-    }
+
     
-    public func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    
-        // Day Picker
-    
+
     
     
     /*
@@ -57,4 +44,13 @@ class DougViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
     */
 
+    @IBAction func submitButtonTapped(_ sender: UIButton) {
+        if whiteSwitch.isOn && blackSwitch.isOn && redSwitch.isOn && blueSwitch.isOn && greenSwitch.isOn && purpleSwitch.isOn {
+            performSegue(withIdentifier: "ToOpenView", sender: nil)
+            resultsLabel.text = "Welcome"
+        } else {
+            resultsLabel.text = "Incorrect Combination"
+        }
+        }
+    
 }

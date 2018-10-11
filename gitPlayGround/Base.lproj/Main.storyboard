@@ -52,7 +52,7 @@
             </objects>
             <point key="canvasLocation" x="972" y="33.733133433283363"/>
         </scene>
-        <!--IS IT YOUR BIRTHDAY?-->
+        <!--Doug's Combo Lock-->
         <scene sceneID="l7c-Gl-KRk">
             <objects>
                 <viewController id="DQp-EC-CLw" customClass="DougViewController" customModule="gitPlayGround" customModuleProvider="target" sceneMemberID="viewController">
@@ -60,29 +60,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOE-7U-fop">
-                                <rect key="frame" x="20" y="84" width="335" height="20.5"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jwH-Vl-ofU" userLabel="whiteSwitch">
+                                <rect key="frame" x="94" y="160" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.79673403076668159" green="0.87740488496217617" blue="0.85614151373594516" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="onTintColor" red="0.8424508556673268" green="0.87740488496217617" blue="0.8523184968712465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1M7-Jv-Hze" userLabel="blackSwitch">
+                                <rect key="frame" x="235" y="160" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.3137548575129534" green="0.3137548575129534" blue="0.3137548575129534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="onTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IXw-SX-8V2" userLabel="redSwitch">
+                                <rect key="frame" x="94" y="249" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.86396939766839376" green="0.12239401590885234" blue="0.0012215222506217534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="onTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="d93-Am-QSy" userLabel="blueSwitch">
+                                <rect key="frame" x="235" y="249" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.0" green="0.12620435601415875" blue="0.71427704015544036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="onTintColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qKr-8G-ieR" userLabel="greenSwitch">
+                                <rect key="frame" x="94" y="341" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="9.735543877041237e-05" green="0.65456928895595856" blue="0.00015103163614988414" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="onTintColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Oqv-3x-XGG" userLabel="purpleSwitch">
+                                <rect key="frame" x="235" y="341" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.5" green="0.11200150561138894" blue="0.49876084299430312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="onTintColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOE-7U-fop">
+                                <rect key="frame" x="20" y="102" width="335" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UfO-yS-AZc">
-                                <rect key="frame" x="273" y="305" width="86" height="216"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdd-ki-JSp">
+                                <rect key="frame" x="159" y="449" width="56" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="SUBMIT"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="DQp-EC-CLw" id="SwG-Vs-pY2"/>
-                                    <outlet property="delegate" destination="DQp-EC-CLw" id="NGD-Jn-T15"/>
+                                    <action selector="submitButtonTapped:" destination="DQp-EC-CLw" eventType="touchUpInside" id="RCi-CG-m7d"/>
+                                    <segue destination="ZRA-gd-Dwy" kind="show" identifier="ToOpenView" id="86t-Ot-51b"/>
                                 </connections>
-                            </pickerView>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W8S-rw-Th1">
-                                <rect key="frame" x="16" y="305" width="249" height="216"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="DQp-EC-CLw" id="Kxv-mA-YJK"/>
-                                </connections>
-                            </pickerView>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.40981135629999998" green="0.74390156730000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.50228288335877891" green="0.51115719739633081" blue="0.53338691032227969" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ZOE-7U-fop" firstAttribute="top" secondItem="sYC-Nn-7IZ" secondAttribute="top" constant="20" id="1up-MO-dcW"/>
                             <constraint firstItem="sYC-Nn-7IZ" firstAttribute="trailing" secondItem="ZOE-7U-fop" secondAttribute="trailing" constant="20" id="CKX-wD-IUe"/>
@@ -90,16 +120,35 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sYC-Nn-7IZ"/>
                     </view>
-                    <navigationItem key="navigationItem" title="IS IT YOUR BIRTHDAY?" id="5IL-Qo-39C"/>
+                    <navigationItem key="navigationItem" title="Doug's Combo Lock" id="5IL-Qo-39C"/>
                     <connections>
-                        <outlet property="dayPicker" destination="UfO-yS-AZc" id="Eug-cw-rRQ"/>
-                        <outlet property="monthPicker" destination="W8S-rw-Th1" id="kFG-HM-ISv"/>
+                        <outlet property="blackSwitch" destination="1M7-Jv-Hze" id="28A-U7-HhK"/>
+                        <outlet property="blueSwitch" destination="d93-Am-QSy" id="NqY-A8-gfi"/>
+                        <outlet property="greenSwitch" destination="qKr-8G-ieR" id="7DS-bL-bbw"/>
+                        <outlet property="purpleSwitch" destination="Oqv-3x-XGG" id="xDe-FI-2bf"/>
+                        <outlet property="redSwitch" destination="IXw-SX-8V2" id="00U-y0-VYZ"/>
                         <outlet property="resultsLabel" destination="ZOE-7U-fop" id="hAJ-JN-vwT"/>
+                        <outlet property="whiteSwitch" destination="jwH-Vl-ofU" id="Vyo-8T-FWM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oIl-LE-ptX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2480.8000000000002" y="-770.46476761619192"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ru1-GZ-bQd">
+            <objects>
+                <viewController id="ZRA-gd-Dwy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P1k-2M-cIo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="gXJ-X0-5pc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r7O-ab-S5h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3332" y="-770"/>
         </scene>
         <!--Stuff-->
         <scene sceneID="Vj1-zp-8uZ">
