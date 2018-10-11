@@ -43,6 +43,9 @@ class justinsTableViewController: UITableViewController {
         let thing = things[indexPath.row]
         
         cell.nameLabel.text = thing.name
+        if thing.photo != nil {
+            cell.thingImage.image = thing.photo
+        }
         
         return cell
     }
