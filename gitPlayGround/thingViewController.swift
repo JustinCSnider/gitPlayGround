@@ -18,14 +18,14 @@ class thingViewController: UIViewController, UITextFieldDelegate, UIImagePickerC
     
     @IBAction func cancel(_ sender: UIBarButtonItem) {
         
-        let isPresentingInAddMealMode = presentingViewController is UINavigationController
+        let isPresentingInAddThingMode = presentingViewController is UINavigationController
         
-        if isPresentingInAddMealMode {
+        if isPresentingInAddThingMode {
             dismiss(animated: true, completion: nil)
         } else if let owningNavigationController = navigationController {
             owningNavigationController.popViewController(animated: true)
         } else {
-            fatalError("The MealViewController is not inside a navigation controller.")
+            fatalError("The ThingViewController is not inside a navigation controller.")
         }
     }
     
